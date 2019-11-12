@@ -1,0 +1,40 @@
+//breakPoint
+$breakpoints: (
+  xs: 320px,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1920px,
+) !default;
+
+//color;
+$primary:rgb(3, 99, 11);
+$title:#333;
+$text:#666;
+$text-hover:#000;
+$textBold:#333;
+
+//width
+
+//height
+$h : 32px;
+$h-xs: $h - 10;
+$h-s: $h - 5;
+$h-md: $h;
+$h-lg: $h + 5;
+$h-xl: $h + 10;
+
+//margin
+$mg : 20px;
+$mg-xs: $mg - 10;
+$mg-s: $mg - 5;
+$mg-md: $mg;
+$mg-lg: $mg + 5;
+$mg-xl: $mg + 10;
+
+//padding
+$pd: 10px;
+
+//border-radius
+$b-radius: $h-md;

@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>마이페이지</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name='author' content="메인페이지">
+<meta name='description' content="메인페이지에 오신 것을 환영합니다">
+@@include('head.html')
+<link rel="stylesheet" type="text/css" href="/styles/main.css" />
+</head>
+<body>
+
+<!-- S: header -->
+<div class="header header-wrap"><!-- 스크롤 이동시 클래스 추가 : fixed -->
+    <h1 class="header-title"><span class="header-title_logo">MOMO</span></h1>
+    <p class="header-text">
+        <strong class="header-text_bigger">불금을 즐기자</strong>
+    </p>
+    <div class="search search-wrap">
+        <form>
+            <input type="text" class="search-input" name="" placeholder="검색어를 입력하세요.">
+            <button type="submit" class="search-btn btn_submit"><span class="icon">검색</span></button>
+            <button type="button" class="search-btn btn_del"><span class="icon">검색어 삭제</span></button>
+        </form>
+    </div>
+</div>
+<!-- E: header -->
+<!-- S: banner -->
+<div class="banner banner-wrap scroll"><!-- 타입에 따라서 클래스 추가 : scroll | swiper -->
+    <ul class="banner-list">
+        <li class="banner-list_item">
+            <div class="item">
+                <span class="img"></span>
+            </div>
+        </li>
+        <li class="banner-list_item">
+            <div class="item">
+                <span class="img"></span>
+            </div>
+        </li>
+        <li class="banner-list_item">
+            <div class="item">
+                <span class="img"></span>
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- E: banner -->
+
+@@include('foot.html')
+</body>
+</html>

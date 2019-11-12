@@ -1,0 +1,27 @@
+/* s : common style */
+[class*=-wrap] {
+	position: relative;
+	padding: $mg-md;
+	box-sizing: border-box;
+	[class*=-wrap] {
+		padding: 0;
+	}
+}
+
+[class*=_full], .w-full {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.item {
+	display: inline-block;
+	.img {
+		display: block;
+		width: 300px;
+		height: 150px;
+		border: 0;
+		border-radius: $b-radius;
+		background: #eee;
+	}
+}
+/* e : common style */
