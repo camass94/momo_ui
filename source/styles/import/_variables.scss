@@ -14,6 +14,9 @@ $title:#333;
 $text:#666;
 $text-hover:#000;
 $textBold:#333;
+$c-default: #f8ede0;
+$c-point: #ff9b96;
+$c-bg: #fff;
 
 //width
 
@@ -22,8 +25,8 @@ $h : 32px;
 $h-xs: $h - 10;
 $h-s: $h - 5;
 $h-md: $h;
-$h-lg: $h + 5;
-$h-xl: $h + 10;
+$h-lg: $h + 8;
+$h-xl: $h + 16;
 
 //margin
 $mg : 20px;
@@ -34,7 +37,7 @@ $mg-lg: $mg + 5;
 $mg-xl: $mg + 10;
 
 //padding
-$pd: 10px;
+$pd: 20px;
 
 //border-radius
-$b-radius: $h-md;
+$b-radius: 24px;

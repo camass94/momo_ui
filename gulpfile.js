@@ -118,7 +118,7 @@ const scripts = ()=> src([`${origin}/js/**/*.js`, `!${origin}/js/react/**/*.js`]
     // .pipe(browsersync.stream());
 
 
-const styles = () => src([`${origin}/styles/**/*.{scss,sass}`,`!${origin}/styles/import/**/*.{scss,sass}`], {since: lastRun(styles)})
+const styles = () => src([`${origin}/styles/**/*.{scss,sass}`,`!${origin}/styles/***/**/*.{scss,sass}`], {since: lastRun(styles)})
     .pipe(newer(`${project}/styles/**/*.{scss,sass}`))
     .pipe(sass.sync().on('error', sass.logError))
     // .pipe(sass().on('error', sass.logError))

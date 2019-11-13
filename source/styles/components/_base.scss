@@ -1,0 +1,80 @@
+/* s : common style */
+.blind {display: none;}
+[class*=-wrap] {
+	position: relative;
+	padding: $mg-md;
+	box-sizing: border-box;
+	[class*=-wrap] {
+		padding: 0;
+	}
+}
+
+[class*=_full], .w-full {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.search {
+	$h-input: $h-lg;
+
+	&-input {
+		@extend .w-full;
+		height: $h-input;
+		line-height: $h-input;
+		background: $c-default;
+		border: 0;
+		border-radius: $h-input;
+		padding: 0 $pd;
+	}
+	&-btn {
+		position: absolute;	
+		right: 0;
+		top: 0;
+		height: $h-input;
+		line-height: $h-input;
+		padding: 0 $pd;
+		background: none;
+		border: 0;
+		box-sizing: border-box;
+
+		&.btn_del {display: none;}
+	}
+}
+
+
+.list {
+	&-item {
+		text-align: center;
+		.title {
+			display: block;
+		}
+		& + * {
+			margin-top: $mg-s;
+		}
+	}
+}
+
+.scroll {
+	overflow-y: auto;
+	.list {
+		width: 1000%; /* 스크립트로 사이즈 수정 할거임. */
+		&-item {
+			float: left;
+			& + * {
+				margin-top: 0;
+				margin-left: $mg-xs;
+			}
+		}
+	}
+}
+
+.item {
+	display: inline-block;
+	.img {
+		display: block;
+		border: 0;
+		border-radius: $b-radius;
+		background: $c-default;
+	}
+}
+/* e : common style */

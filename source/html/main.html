@@ -11,43 +11,54 @@
 </head>
 <body>
 
-<!-- S: header -->
-<div class="header header-wrap"><!-- 스크롤 이동시 클래스 추가 : fixed -->
-    <h1 class="header-title"><span class="header-title_logo">MOMO</span></h1>
-    <p class="header-text">
-        <strong class="header-text_bigger">불금을 즐기자</strong>
-    </p>
-    <div class="search search-wrap">
-        <form>
-            <input type="text" class="search-input" name="" placeholder="검색어를 입력하세요.">
-            <button type="submit" class="search-btn btn_submit"><span class="icon">검색</span></button>
-            <button type="button" class="search-btn btn_del"><span class="icon">검색어 삭제</span></button>
-        </form>
+<!-- S: main -->
+<div class="main"><!-- 스크롤 이동시 클래스 추가 : fixed -->
+    <!-- S: header -->
+    <div class="header header-wrap">
+        <h1 class="header-title"><span class="header-title_logo">MOMO</span></h1>
+        <p class="header-text">
+            <strong class="header-text_bigger">퇴근 후 불금을 즐기실<br> 준비는 되었는가? 닝겐이여</strong>
+        </p>
+        <!-- S: search -->
+        <div class="search search-wrap">
+            <form>
+                <input type="text" class="search-input" name="" placeholder="검색어를 입력하세요.">
+                <button type="submit" class="search-btn btn_submit"><span class="icon">검색</span></button>
+                <button type="button" class="search-btn btn_del"><span class="icon">검색어 삭제</span></button>
+            </form>
+        </div>
+        <!-- E: search -->
+    </div>
+    <!-- E: header -->
+
+    <!-- S: banner -->
+    <div class="banner banner-wrap scroll"><!-- 타입에 따라서 클래스 추가 : scroll | swiper -->
+        <ul class="list">
+            <li class="list-item">
+                <a herf="#" class="item">
+                    <span class="img"></span>
+                    <!-- <span class="title"></span> -->
+                    <!-- <span class="space"></span> -->
+                </a>
+            </li>
+            <li class="list-item">
+                <a herf="#" class="item">
+                    <span class="img"></span>
+                </a>
+            </li><li class="list-item">
+                <a herf="#" class="item">
+                    <span class="img"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- E: banner -->
+
+    <div class="category category-wrap scroll">
+        @@include('list_category.html')
     </div>
 </div>
-<!-- E: header -->
-<!-- S: banner -->
-<div class="banner banner-wrap scroll"><!-- 타입에 따라서 클래스 추가 : scroll | swiper -->
-    <ul class="banner-list">
-        <li class="banner-list_item">
-            <div class="item">
-                <span class="img"></span>
-            </div>
-        </li>
-        <li class="banner-list_item">
-            <div class="item">
-                <span class="img"></span>
-            </div>
-        </li>
-        <li class="banner-list_item">
-            <div class="item">
-                <span class="img"></span>
-            </div>
-        </li>
-    </ul>
-</div>
-<!-- E: banner -->
+<!-- E: main -->
 
-@@include('foot.html')
 </body>
 </html>
