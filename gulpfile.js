@@ -106,7 +106,7 @@ const react = ()=> src(`${origin}/js/react/entry.js`) //, {since: lastRun(react)
     ))
     .pipe(dest(`${project}/js/react`))
 
-const scripts = ()=> src([`${origin}/js/**/*.js`, `!${origin}/js/react/**/*.js`], {since: lastRun(scripts)})
+const scripts = ()=> src([`${origin}/js/**/*.js`, `!${origin}/js/main/**/*.js`, `!${origin}/js/react/**/*.js`], {since: lastRun(scripts)})
     .pipe(newer(`${project}/js/**/*.js`))
     .pipe(plumber({errorHandler : gutil.log}))
     .pipe(jshint())

@@ -33,32 +33,42 @@
 
     <!-- S: banner -->
     <div class="banner banner-wrap scroll"><!-- 타입에 따라서 클래스 추가 : scroll | swiper -->
-        <ul class="list">
-            <li class="list-item">
-                <a href="#" class="item">
-                    <span class="img"></span>
-                    <!-- <span class="title"></span> -->
-                    <!-- <span class="space"></span> -->
-                </a>
-            </li>
-            <li class="list-item">
-                <a href="#" class="item">
-                    <span class="img"></span>
-                </a>
-            </li><li class="list-item">
-                <a href="#" class="item">
-                    <span class="img"></span>
-                </a>
-            </li>
-        </ul>
+        @@include('list_banner.html')
     </div>
     <!-- E: banner -->
-
+</div>
+<!-- E: main -->
+<!-- S: main_sub -->
+<div class="main_sub">
     <div class="category category-wrap scroll">
         @@include('list_category.html')
     </div>
-</div>
-<!-- E: main -->
+    <div class="article">
+        <div class="tab tab-wrap">
+            <ul class="tab_list">
+                <li class="tab_list-item on"><a href="#">추천모임</a></li>
+                <li class="tab_list-item"><a href="#">신규생성</a></li>
+                <li class="tab_list-item"><a href="#">클래스</a></li>
+            </ul>
+        </div>
 
+        <div class="article article-wrap scroll">
+            <ul class="article_list-spot">
+                @@include('list_article.html')
+            </ul>
+        </div>
+
+        <div class="article article-wrap">
+            <h2 class="article-title">인기모임</h2>
+            <p class="article-des">3개월 동안 이 카테고리에서 활동이 가장 많은 모임입니다.</p>
+            <ul class="article_list">
+                @@include('list_article.html')
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- E: main_sub -->
+
+@@include('foot.html')
 </body>
 </html>

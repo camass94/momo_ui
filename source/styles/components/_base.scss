@@ -1,7 +1,20 @@
 /* s : common style */
+a{
+	text-decoration:none; 
+	outline: none;  
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	color: inherit;
+}
+a:link,a:visited,a:hover,a:active{
+	text-decoration:none;
+	outline: none;
+}
+
 .blind {display: none;}
+
 [class*=-wrap] {
 	position: relative;
+	display: block;
 	padding: $mg-md;
 	box-sizing: border-box;
 	[class*=-wrap] {
@@ -42,25 +55,25 @@
 }
 
 
-.list {
-	&-item {
+.list, [class*=_list] {
+	[class*=list-item] {
 		text-align: center;
-		.title {
+		.tit {
 			display: block;
 		}
-		& + * {
+		/* + [class*=list-item] {
 			margin-top: $mg-s;
-		}
+		} */
 	}
 }
 
 .scroll {
 	overflow-y: auto;
-	.list {
+	.list, [class*=_list] {
 		width: 1000%; /* 스크립트로 사이즈 수정 할거임. */
-		&-item {
+		[class*=list-item] {
 			float: left;
-			& + * {
+			+ [class*=list-item] {
 				margin-top: 0;
 				margin-left: $mg-xs;
 			}
@@ -69,12 +82,38 @@
 }
 
 .item {
+	position: relative;
 	display: inline-block;
 	.img {
 		display: block;
+		height: 130px; //임시.
 		border: 0;
 		border-radius: $b-radius;
 		background: $c-default;
 	}
+	.rank {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 10;
+	}
+	.btn_like {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 10;
+	}
+	.info {
+		text-align: left;
+	}
+}
+
+.title, , [class*=-title] {
+	color: $f-bold;
+	font-size: 24px;
+}
+.des, , [class*=-des] {
+	color: $f-sub;
+	font-size: 12px;
 }
 /* e : common style */

@@ -52,3 +52,5 @@ if($mypage.length){
     ReactDOM.render(<Mypage />, $mypage[0]);
 }
 
+//main
+import Main from './main/index.js';

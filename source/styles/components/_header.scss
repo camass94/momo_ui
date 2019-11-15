@@ -1,6 +1,6 @@
 @import 'import/variables';
 
-$logo-size: $h-lg;
+$logo-size: $h-s;
 
 .header {
 	&-wrap {
@@ -16,6 +16,7 @@ $logo-size: $h-lg;
 		border-radius: $h-md;
 		background: $c-point;
 		overflow: hidden;
+		font-size: 16px;
 		color: #fff;
 	}
 	&-text {
@@ -42,7 +43,7 @@ $logo-size: $h-lg;
 	}
 	.header-title {
 		left: $mg-xs;
-		top: $mg-xs;
+		top: 18px;
 	}
 	.header-text {
 		display: none;
@@ -53,6 +54,7 @@ $logo-size: $h-lg;
 		&-wrap {
 			margin-top: 0;
 			margin-left: $logo-size + 10;
+			margin-right: $logo-size + 10;
 		}
 		&-input {
 			height: $h-input;

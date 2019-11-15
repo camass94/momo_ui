@@ -11,21 +11,30 @@ $breakpoints: (
 //color;
 $primary:rgb(3, 99, 11);
 $title:#333;
-$text:#666;
+$text:#000;
 $text-hover:#000;
 $textBold:#333;
+
+//font color
+$f-default: #000;
+$f-hover: #000;
+$f-point: #ff9b96;
+$f-light: #ccc;
+$f-bold: #000;
+$f-sub: #434343;
+
+//color
 $c-default: #f8ede0;
 $c-point: #ff9b96;
 $c-bg: #fff;
-
-//width
+$c-dark: #3e2910;
 
 //height
 $h : 32px;
 $h-xs: $h - 10;
-$h-s: $h - 5;
-$h-md: $h;
-$h-lg: $h + 8;
+$h-s: 24px;
+$h-md: 32px;
+$h-lg: 40px;
 $h-xl: $h + 16;
 
 //margin

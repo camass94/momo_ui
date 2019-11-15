@@ -1,38 +1,54 @@
 @import 'import/variables';
 @import 'components/base';
 @import 'components/header';
-@import 'components/category';
+@import 'components/lists';
 
-/* s : default */
-.main .search {
-	$h-input: $h-xl;
-	
-	&-wrap {
-		margin-top: $mg-xs; 
+/* s : main */
+.main {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	.search {
+		$h-input: $h-xl;
+		
+		&-wrap {
+			margin-top: $mg-xs; 
+		}
+		&-input {
+			height: $h-input;
+			line-height: $h-input;
+			border-radius: $h-input;
+		}
+		&-btn {
+			height: $h-input;
+			line-height: $h-input;
+			padding: 0 $pd;
+		}
 	}
-	&-input {
-		height: $h-input;
-		line-height: $h-input;
-		border-radius: $h-input;
-	}
-	&-btn {
-		height: $h-input;
-		line-height: $h-input;
-		padding: 0 $pd;
-	}
-}
-.banner {
-	&-wrap {
-		padding-top: 22.23%; 
-	}
-	
-	.list {
-		.img {
-			width: 85vw;
-			min-width: 272px;
-			height: 130px;
+	.banner {
+		&-wrap {
+			padding-top: 22.23%; 
+		}
+		
+		.list {
+			.img {
+				width: 85vw;
+				min-width: 272px;
+				height: 130px;
+			}
 		}
 	}
 }
-/* e : default */
+/* e : main */
+/* s : main_sub */
+.main_sub {
+	position: relative;
+	min-height: 100vh;
+	margin-top: 530px;
+	background: $c-bg;
+	border-radius: $b-radius $b-radius 0 0;
+	box-shadow: 0 10px 10px 10px rgba(0,0,0,0.1);
+}
+/* e : main_sub */
 
