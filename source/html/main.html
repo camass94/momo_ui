@@ -9,13 +9,13 @@
 @@include('head.html')
 <link rel="stylesheet" type="text/css" href="/styles/main.css" />
 </head>
-<body>
+<body class=""><!-- 스크롤 이동시 클래스 추가 : fixed -->
 
 <!-- S: main -->
-<div class="main"><!-- 스크롤 이동시 클래스 추가 : fixed -->
+<div class="main">
     <!-- S: header -->
     <div class="header header-wrap">
-        <h1 class="header-title"><span class="header-title_logo">MOMO</span></h1>
+        <h1 class="header-title"><span class="logo">MOMO</span></h1>
         <p class="header-text">
             <strong class="header-text_bigger">퇴근 후 불금을 즐기실<br> 준비는 되었는가? 닝겐이여</strong>
         </p>
@@ -43,7 +43,7 @@
     <div class="category category-wrap scroll">
         @@include('list_category.html')
     </div>
-    <div class="article">
+    <div class="main_sub-wrap">
         <div class="tab tab-wrap">
             <ul class="tab_list">
                 <li class="tab_list-item on"><a href="#">추천모임</a></li>
@@ -52,18 +52,22 @@
             </ul>
         </div>
 
-        <div class="article article-wrap scroll">
-            <ul class="article_list-spot">
-                @@include('list_article.html')
-            </ul>
+        <div class="article">
+            <div class="article-wrap scroll">
+                <ul class="article_list-spot">
+                    @@include('list_article.html')
+                </ul>
+            </div>
         </div>
 
-        <div class="article article-wrap">
+        <div class="article">
             <h2 class="article-title">인기모임</h2>
             <p class="article-des">3개월 동안 이 카테고리에서 활동이 가장 많은 모임입니다.</p>
-            <ul class="article_list">
-                @@include('list_article.html')
-            </ul>
+            <div class="article-wrap">
+                <ul class="article_list">
+                    @@include('list_article.html')
+                </ul>
+            </div>
         </div>
     </div>
 </div>

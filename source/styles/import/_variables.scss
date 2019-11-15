@@ -50,3 +50,30 @@ $pd: 20px;
 
 //border-radius
 $b-radius: 24px;
+
+$wrap: (
+	bg: #fff
+	,pd: 20px
+	,mg: 20px
+	,radius: 24px
+);
+$item: (
+	bg: $c-default
+	,radius: 24px
+);
+$color: (
+	default: #f8ede0
+	,point: #ff9b96
+	,bg: #fff
+	,dark: #3e2910
+);
+$input: (
+	h: 40px
+	,pd: $pd
+	,text: #000
+	,bg: #f8ede0
+	,radius: 24px
+);
+
+
+

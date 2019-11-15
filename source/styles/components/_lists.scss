@@ -4,6 +4,7 @@
 	
 	.list {
 		&-item {
+			display: inline-block;
 			width: 23.8%;
 			text-align: center;
 
@@ -35,6 +36,7 @@
 .tab {
 	&_list {
 		&-item {
+			display: inline-block;
 			color: $f-light;
 			font-size: 19px;
 			font-weight: bold;

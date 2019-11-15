@@ -1,4 +1,21 @@
-/* s : common style */
+/* s : reset */
+html, body, h1, h2, h3, h4, h5, p {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline-block;
+		list-style: none;
+	}
+}
+input {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
 a{
 	text-decoration:none; 
 	outline: none;  
@@ -9,7 +26,10 @@ a:link,a:visited,a:hover,a:active{
 	text-decoration:none;
 	outline: none;
 }
+/* e : reset */
 
+
+/* s : common style */
 .blind {display: none;}
 
 [class*=-wrap] {
@@ -28,16 +48,16 @@ a:link,a:visited,a:hover,a:active{
 }
 
 .search {
-	$h-input: $h-lg;
+	$h-input: map-get($input, h);
 
 	&-input {
 		@extend .w-full;
 		height: $h-input;
 		line-height: $h-input;
-		background: $c-default;
+		background: map-get($input, bg);
 		border: 0;
 		border-radius: $h-input;
-		padding: 0 $pd;
+		padding: 0 map-get($input, pd);
 	}
 	&-btn {
 		position: absolute;	
@@ -45,7 +65,7 @@ a:link,a:visited,a:hover,a:active{
 		top: 0;
 		height: $h-input;
 		line-height: $h-input;
-		padding: 0 $pd;
+		padding: 0 map-get($input, pd);
 		background: none;
 		border: 0;
 		box-sizing: border-box;
@@ -56,6 +76,7 @@ a:link,a:visited,a:hover,a:active{
 
 
 .list, [class*=_list] {
+	.list-item {display: block;}
 	[class*=list-item] {
 		text-align: center;
 		.tit {
@@ -80,13 +101,13 @@ a:link,a:visited,a:hover,a:active{
 
 .item {
 	position: relative;
-	display: inline-block;
+	display: block;
 	.img {
 		display: block;
 		height: 130px; //임시.
 		border: 0;
-		border-radius: $b-radius;
-		background: $c-default;
+		border-radius: map-get($item, radius);
+		background: map-get($item, bg);
 	}
 	.rank {
 		position: absolute;

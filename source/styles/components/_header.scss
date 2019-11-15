@@ -5,7 +5,7 @@ $logo-size: $h-s;
 .header {
 	&-wrap {
 		padding-top: 40.85%; 
-		background: $c-bg;
+		background: map-get($wrap, bg);
 	}
 	&-title {
 		position: absolute;
@@ -14,10 +14,11 @@ $logo-size: $h-s;
 		width: $logo-size;
 		height: $logo-size;
 		border-radius: $h-md;
-		background: $c-point;
+		background: map-get($color, point);
 		overflow: hidden;
 		font-size: 16px;
 		color: #fff;
+		overflow: hidden;
 	}
 	&-text {
 		letter-spacing: -.5px;
@@ -26,49 +27,3 @@ $logo-size: $h-s;
 		}
 	}
 }
-
-/* s : fixed */
-.fixed, .fixed.main {
-	.header {
-		position: fixed;
-		left: 0;
-		top: 0;
-		width: 100%;
-		padding: $mg-xs;
-		z-index: 1000;
-
-		& + * {
-			margin-top: $logo-size + ($mg-s * 2);
-		}
-	}
-	.header-title {
-		left: $mg-xs;
-		top: 18px;
-	}
-	.header-text {
-		display: none;
-	}
-	.search {
-		$h-input: $h-lg;
-		
-		&-wrap {
-			margin-top: 0;
-			margin-left: $logo-size + 10;
-			margin-right: $logo-size + 10;
-		}
-		&-input {
-			height: $h-input;
-			line-height: $h-input;
-			border-radius: $h-input;
-		}
-		&-btn {
-			height: $h-input;
-			line-height: $h-input;
-			padding: 0 $pd;
-		}
-	}
-	.banner {
-		display: none;
-	}
-}
-/* e : fixed */
